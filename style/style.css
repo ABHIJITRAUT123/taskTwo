@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+/* This for screen */
+
 *{
     padding: 0;
     margin: 0;
@@ -6,25 +10,62 @@
 html{
     font-size: 62.5%;
 }
-.nav{
+body{
+    overflow-x: hidden;
+}
+@media screen and (min-width : 460px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    html{
+        font-size: 62.5%;
+    }
+    body{
+        overflow-x: hidden;
+    }
+}
+
+
+/* Nav Section */
+
+.nav-logo{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-.grids{
+.grids-logo{
     margin-top: 2rem;
     margin-left: 3.5rem;
 }
-
-.bar{
+.bar-logo{
     margin-top: 2rem;
-    margin-right: -1rem;
+    margin-right: 1rem;
+}
+@media screen and (min-width : 460px){
+    .nav-logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .grids-logo{
+        margin-top: 2.4rem;
+        margin-left: 13.5rem;
+    }
+    .bar-logo{
+        margin-top: 2.4rem;
+        margin-right: 13.8rem;
+    }
+}
+
+/* Farmer above Text style */
+
+.heading-container{
+    margin-left: 3.6rem;
 }
 .upl{
-    margin-top: 10rem;
-    margin-right: 3.3rem;
-    margin-left: 3.6rem;
+    margin-top: 10rem;  
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -35,7 +76,6 @@ html{
 }
 .ltd{
     margin-top: 1rem;
-    margin-left: 3.6rem;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -47,12 +87,12 @@ html{
 .colour{
     width: 6.1rem;
     margin-top: 1rem;
-    margin-left: 3.6rem;
-    border: 2px solid #CEA100;
+    height: 0.3rem;
+    color: 3px solid #CEA100;
+    background-color: #CEA100;
 }
 .ui{
     margin-top: 1rem;
-    margin-left: 3.6rem;
     margin-bottom: 7rem;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -62,10 +102,72 @@ html{
 
     color: #5A5A5A;
 }
-.farmer{
-    width: 39.8rem;
+@media screen and (min-width : 460px){ 
+    .heading-container{
+        margin-left: 13.5rem;
+    }  
+    .upl{
+        margin-top: 14.3rem;       
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 60px;
+        line-height: 90px;
+
+        color: #494949;
+    }
+    .ltd{
+        margin-top: 1.4rem;
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+
+        color: #5A5A5A;
+    }
+    .colour{
+        width: 6.1rem;
+        height: 0.3rem;
+        margin-top: 2rem;
+        color: 3px solid #CEA100;
+        background-color: #CEA100;
+    }
+    .ui{
+        margin-top: 3rem;
+        margin-bottom: 7rem;
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+
+        color: #5A5A5A;
+    }
 }
-.pre{
+
+/* Farmer Image  */
+
+.farmer{
+    width: 100%;
+    display: block;
+}
+.farmerdesktop{
+    display: none;
+}
+@media screen and (min-width : 460px){   
+    .farmer{       
+        display: none;
+    }
+    .farmerdesktop{
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Farmer below text */
+
+.farmer-right-side-text{
     margin-top: 7rem;
     margin-left: 3.6rem;
     font-family: 'Poppins', sans-serif;
@@ -76,6 +178,22 @@ html{
 
     color: #2F2F2F;
 }
+@media screen and (min-width : 460px){   
+    .farmer-right-side-text{
+        margin-left: 70rem;
+        margin-right: 13.5rem;
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 172%;
+    
+        color: #2F2F2F;
+    }
+}
+
+/* Challenge Title and Text */
+
 .challenge{
     margin-top: 7rem;
     margin-left: 3.6rem;
@@ -98,6 +216,37 @@ html{
 
     color: #2F2F2F;
 }
+@media screen and (min-width : 460px){   
+    .challenge{
+        margin-left: 13.5rem;
+        margin-top: 2.2rem;
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 172%;
+
+        color: #000000;
+    }
+    .challengeText{
+        margin-left: 13.5rem;
+        margin-top: 3.7rem;
+        margin-right: 69rem;
+        margin-bottom: 11.8rem;
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 172%;
+
+        color: #2F2F2F;
+    }
+}
+
+
+
+/* Big Images for mobile */
+
 .bigImg{
     background: #F9F9F9;
     margin-top: 11rem;
@@ -105,28 +254,38 @@ html{
     margin-right: -4rem;
     justify-content: center;
 }
-.approach{
-    margin-top: 7rem;
-    margin-left: 3.6rem;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 172%;
-
-    color: #000000;
+.uplearth{
+    width: 100%;
+    margin-right: 1rem;
 }
-.approachText{
-    margin-top: 3.7rem;
-    margin-left: 3.6rem;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 172%;
-
-    color: #2F2F2F;
+.bigImg_desktop{
+    display: none;
 }
+@media screen and (min-width : 460px){ 
+    .big-img-container{
+        width: 100%;
+        height: 71.7rem;
+        left: 0.1rem;
+        margin-bottom: 11.8rem;
+
+        background: #F9F9F9;
+    }  
+    .carousel-cell{
+        width: 66%;
+        height: 45rem;
+        margin-right: 1rem;
+        margin-top: 13.4rem;
+    }
+    .carousel-cel::before{
+        display: block;
+    }
+    .carousel-cell:hover{
+        display: block;
+    }
+}
+
+/* Small Images for mobile */
+
 .threeImg{
     background: #F9F9F9;
     margin-top: 11rem;
@@ -134,6 +293,35 @@ html{
     margin-right: -4rem;
     justify-content: center;
 }
+.three_Img{
+    display: none;
+}
+.country{
+    width: 100%
+}
+@media screen and (min-width : 460px){
+    .country{
+        width: 31.5rem;
+        height: 59.7rem;
+        margin-top: 6.1rem;
+        margin-left: 16.9rem;
+    }
+    .three_Img{
+        width: 100%;
+        height: 71.7rem;
+        left: 0rem;
+        margin-bottom: 11.8rem;
+
+        background: #F9F9F9;
+        display: block;
+    }
+    .small-img-mobile{
+        display: none;
+    }
+}
+
+/* Slide Show CSS Here */
+
 .slideshow-container {
     max-width: 1000px;
     position: relative;
@@ -150,32 +338,28 @@ html{
     from {opacity: .4}
     to {opacity: 1}
 }
-.result{
-    margin-top: 7rem;
-    margin-left: 3.6rem;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 172%;
 
-    color: #000000;
-}
-.resultText{
-    margin-top: 3.7rem;
-    margin-left: 3.6rem;
-    margin-bottom: 7rem;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 172%;
+/* Screenshot Image */
 
-    color: #2F2F2F;
-}
 .screenshot{
-    width: 39.8rem;
+    width: 100%;
 }
+.screenshotdesktop{
+    display: none;
+}
+@media screen and (min-width : 460px){   
+    .screenshot{       
+        display: none;
+    }
+    .screenshotdesktop{
+        width: 100%;
+        margin-top: 11.8rem;
+        display: block;
+    }
+}
+
+/* Prev Page and Next Page */
+
 .prev{   
     display: none;
 }
@@ -183,14 +367,13 @@ html{
     display: none;
 }
 .buttons-bottom{
-    padding: 0 30px;
+    padding: 0 80px;
     display: flex;
     background: rgb(255, 255, 255);
     justify-content: space-between;
     width: 100%;
     height: 30rem;
     margin-top: 16.8rem;
-    margin-left: 3rem;
 }
 .boxSection{
     height: 6rem;
@@ -198,13 +381,54 @@ html{
     background: #FFFFFF;
     border: 0.5px solid #737373;
 }
+@media screen and (min-width : 460px){  
+    .boxSection{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        height: 6rem;
+        width: 30rem;
+        box-sizing: border-box;
+        margin-bottom: 2rem;   
+        border: 1px solid #D7D7D7;
+    }
+    .prev{
+        display: block;
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 175.5%;
+    
+        color: #5A5A5A;
+    }
+    .next{
+        display: block;
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 175.5%;
+    
+        color: #5A5A5A;
+    }
+}
+
+
+/* Footer Section Style CSS */
+
+
+/* Footer First Style CSS */
+
 .footerFirst{
-    width: 38rem;
+    width: 32rem;
     height: 51rem;
     margin-bottom: 20rem;
     padding-bottom: 7rem;
     margin-left: 1.1rem;
     margin-right: 4.1rem;
+    padding-right: 0px;
     background: linear-gradient(90.17deg, #AD8F23 0.14%, #A78201 99.86%);
 }
 .meet{
@@ -255,15 +479,68 @@ html{
     color: #FFFFFF;
     background: linear-gradient(90.17deg, #AD8F23 0.14%, #A78201 99.86%);
 }
+@media screen and (min-width : 460px){
+    .footerFirst{
+        width: 100%;
+        height: 40rem;
+        margin-left: 0%;
+        margin-bottom: 0%;
+        background: linear-gradient(90.17deg, #AD8F23 0.14%, #A78201 99.86%);
+    }
+    .look{
+        width: 40.5rem;
+        height: 4.9rem;
+        margin-left: 13.5rem;
+
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 175.5%;
+
+        color: #FFFFFF;
+    }
+    .meet{
+        width: 46.3rem;
+        height: 11.8rem;
+        margin-left: 13.5rem;
+
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 67px;
+        line-height: 175.5%;
+
+        color: #FFFFFF;
+    }
+    .btn{
+        margin-left: 13.5rem;
+        box-sizing: border-box;
+        width: 25.8rem;
+        height: 6.1rem;
+
+        border: 1px solid #F0F0F0;
+        background: linear-gradient(90.17deg, #AD8F23 0.14%, #A78201 99.86%);
+    }
+    .btnText{
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 175.5%;
+
+        color: #FFFFFF;
+        background: linear-gradient(90.17deg, #AD8F23 0.14%, #A78201 99.86%);
+    }    
+}
+
+/* Footer Second Style CSS */
+
 .footerSecond{
-    width: 40rem;
-    height: 54rem;
-    padding-top: 2.5rem;
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
+    height: 39.9rem;
     margin-left: 0rem;
     margin-right: 0rem;
-
+    margin-bottom: 0%;
     background: #F9F9F9;
 }
 .mob{
@@ -312,17 +589,16 @@ html{
     width: 40%;
 }
 .footerline{
-    width: 34rem;
+    width: 30rem;
     margin-left: 3.6rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
     border: 0.5px solid #D6D6D6;
 }
 .work{
-    margin-top: 7rem;
     width: 46px;
     height: 27px;
-    margin-left: 3.5rem;
+    margin-left: 1rem;
     margin-top: 2rem;
     padding-top: 2rem;
     font-family: 'Poppins', sans-serif;
@@ -335,7 +611,7 @@ html{
 }
 .career{
     margin-top: 7rem;
-    margin-left: 2.8rem;
+    margin-left: 2rem;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -346,7 +622,7 @@ html{
 }
 .service{
     margin-top: 7rem;
-    margin-left: 4rem;
+    margin-left: 3.4rem;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -356,8 +632,8 @@ html{
     color: #737373;
 }
 .article{
-    margin-top: 7rem;
-    margin-left: 4.3rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -391,444 +667,16 @@ html{
 
     color: #5A5A5A;
 }
-
- 
-/* .something{
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 250px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-} */
-
-
-.water{
-    width: 34rem;
-}
-.uplearth{
-    width: 34rem;
-}
-.frame{
-    width: 34rem;
-}
-.country{
-    width: 38rem;
-}
-.achivement{
-    width: 36rem;
-}
-.data{
-    width: 36rem;
-}
-
-
-
-
-/* @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 @media screen and (min-width : 460px){
-    body{
-        overflow-x: hidden;
-    }
-    *{
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
-    .colour{
-        margin-top: 20px;
-        position: absolute;
-        width: 61.03px;
-        height: 0px;
-        left: 135px;
-        top: 392px;
-
-        border: 3px solid #CEA100;
-    }
-    .nav{
-        position: absolute;
-        margin-top: 42.65px;
-        margin-left: 137px;
-    }
-    .bar{
-        position: absolute;
-        margin-left: 1000px;
-        right: 9.58%;
-        bottom: 98.99%;
-    }
-    .upl{
-        position: absolute;
-        width: 342px;
-        height: 87px;
-        left: 135px;
-        top: 211px;
-
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 60px;
-        line-height: 90px;
-
-        color: #494949;
-    }
-    .ltd{
-        margin-top: 30px;
-        position: absolute;
-        width: 471px;
-        height: 54px;
-        left: 135px;
-        top: 312px;
-
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 27px;
-
-        color: #5A5A5A;
-    }
-    .ui{
-        margin-top: 30px;
-        position: absolute;
-        width: 471px;
-        height: 27px;
-        left: 135px;
-        top: 418px;
-
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 27px;
-
-        color: #5A5A5A;
-    }
-    .farmer{
-        position: absolute;
-        width: 1350px;
-        height: 562px;
-        left: 0px;
-        right: 0px;
-        padding: 0px;
-        top: 545px;
-
-        background: url(ac2d8c589a1a2702804c8b1b48581f41.jpg);
-    }
-    .pre{
-        position: absolute;
-        width: 600px;
-        height: 339px;
-        left: 705px;
-        top: 1203px;
-
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 172%;
-
-        color: #2F2F2F;
-    }
-    .challenge{
-        position: absolute;
-        width: 180px;
-        height: 60px;
-        left: 128px;
-        top: 1564px;
-
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 35px;
-        line-height: 172%;
-
-        color: #000000;
-    }
-    .challengeText{
-        position: absolute;
-        width: 610px;
-        height: 559px;
-        left: 135px;
-        top: 1661px;
-
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 172%;
-
-        color: #2F2F2F;
-    }
-    .approach{
-        position: absolute;
-        width: 431px;
-        height: 60px;
-        left: 142px;
-        top: 3106px;
-
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 35px;
-        line-height: 172%;
-
-        color: #000000;
-    }
-    .approachText{
-        position: absolute;
-        width: 600px;
-        height: 419px;
-        left: 149px;
-        top: 3204px;
-
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 172%;
-
-        color: #2F2F2F;
-    }
-    .result{
-        position: absolute;
-        width: 276px;
-        height: 60px;
-        left: 169px;
-        top: 4575px;
-
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 35px;
-        line-height: 172%;
-
-        color: #000000;
-    }
-    .resultText{
-        position: absolute;
-        width: 600px;
-        height: 419px;
-        left: 176px;
-        top: 4672px;
-
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 172%;
-
-        color: #2F2F2F;
-    } */
-
-    /* .water{
-        position: absolute;
-        width: 1008px;
-        height: 449px;
-        left: -726px;
-        top: 2405px;
-    }
-    .uplearth{
-        position: absolute;
-        width: 816px;
-        height: 450px;
-        left: 327px;
-        top: 2405px;
-    }
-    .frame{
-        position: absolute;
-        width: 978px;
-        height: 450px;
-        left: 1188px;
-        top: 2405px;
-    } */
-    /* .bigImg{
-        position: absolute;
-        width: 1445px;
-        height: 717px;
-        left: 1px;
-        top: 2271px;
-
-        background: #F9F9F9;
-    } */
-    /* .threeImg{
-        position: absolute;
-        width: 1440px;
-        height: 717px;
-        left: 0px;
-
-        background: #F9F9F9;
-    } */
-    /* .country{
-        position: absolute;
-        width: 315px;
-        height: 597px;
-        left: 80px;
-        top: 3801px;
-
-        background: url(Screenshot_20211022-111257_Chrome.jpg);
-    }
-    .achivement{
-        position: absolute;
-        width: 337px;
-        height: 597px;
-        left: 900px;
-        top: 3801px;
-    }
-    .data{
-        position: absolute;
-        width: 323px;
-        height: 599px;
-        left: 500px;
-        top: 3801px;
-        
-        background: url(Screenshot_20211022-111014_Chrome.jpg);
-    }
-    .screenshot{
-        position: absolute;
-        width: 1440px;
-        height: 821px;
-        left: 0px;
-        top: 5209px;
-    }
-    .boxSection{
-        box-sizing: border-box;
-
-        position: absolute;
-        width: 251px;
-        height: 61px;
-        left: 150px;
-        top: 6113px;
-        margin-bottom: 20px;
-
-        border: 1px solid #D7D7D7;
-    }
-    .boxSections{
-        box-sizing: border-box;
-
-        position: absolute;
-        width: 251px;
-        height: 61px;
-        left: 900px;
-        top: 6113px;
-
-        border: 1px solid #D7D7D7;
-    }
-    .leftArrow{
-        margin-top: 10px;
-        position: absolute;
-        left: 16.67%;
-        right: 80.67%;
-        top: 16.67%;
-        bottom: 16.67%;
-    }
-    .rightArrow{
-        margin-top: 10px;
-        margin-left: 10px;
-        position: absolute;
-        left: 80.67%;
-        right: 16.67%;
-        top: 16.67%;
-        bottom: 16.67%;
-    }
-    .prev{
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
-        text-align: center;
-        font-weight: 400;
-        font-size: 22px;
-        line-height: 175.5%;
-        margin-bottom: 20px;
-
-        color: #5A5A5A;
-    }
-    .next{
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 22px;
-        line-height: 175.5%;
-        margin-bottom: 20px;
-
-        color: #5A5A5A;
-    }
-    .footerFirst{
-        position: absolute;
-        width: 1440px;
-        height: 399px;
-        left: 0px;
-        top: 6258px;
-
-        background: linear-gradient(90.17deg, #AD8F23 0.14%, #A78201 99.86%);
-    }
     .footerSecond{
-        position: absolute;
-        width: 1440px;
-        height: 399px;
-        left: 0px;
-        top: 6657px;
-
+        width: 100%;
+        height: 39.9rem;
+    
         background: #F5F5F5;
-    }
-    .look{
-        margin-top: 50px;
-        margin-left: 50px;
-
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 28px;
-        line-height: 175.5%;
-
-        color: #FFFFFF;
-    }
-    .meet{
-        margin-top: 50px;
-        margin-left: 50px;
-
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 67px;
-        line-height: 175.5%;
-
-        color: #FFFFFF;
-    }
-    .up{
-        margin-top: 50px;
-        margin-left: 50px;
-
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 22px;
-        line-height: 175.5%;
-
-        color: #FFFFFF;
-    }
-    .btn{
-        margin-left: 50px;
-        box-sizing: border-box;
-        width: 258px;
-        height: 61px;
-        left: 135px;
-        top: 6516px;
-
-        border: 1px solid #F0F0F0;
-        background: linear-gradient(90.17deg, #AD8F23 0.14%, #A78201 99.86%);
-    }
-    .btnText{
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 22px;
-        line-height: 175.5%;
-
-        color: #FFFFFF;
-        background: linear-gradient(90.17deg, #AD8F23 0.14%, #A78201 99.86%);
-    }
-    .grids{
-        margin-top: 30px;
-        margin-left: 30px;
+    } 
+    .gridsImg{
+        margin-top: -25rem;
+        margin-left: 13.5rem;
         font-family: 'Noto Sans';
         font-style: normal;
         font-weight: 700;
@@ -838,7 +686,8 @@ html{
         color: #737373;
     }
     .add{
-        margin-left: 30px;
+        margin-left: 13.9rem;
+        margin-top: -18rem;
         font-family: 'Poppins', sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -848,7 +697,8 @@ html{
         color: #000000;
     }
     .mob{
-        margin-left: 30px;
+        margin-left: 13.9rem;
+        margin-top: 21.2rem;
         font-family: 'Poppins', sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -857,24 +707,20 @@ html{
 
         color: #000000;
     }
-    .copyright{
-        margin-left: 30px;
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 18px;
-
-        color: #5A5A5A;
-    }
     .footer-list-1{
-        margin-left: 30px;
+        margin-left: 14.6rem;
         display: flex;
         justify-content: space-between;
-        width: 15%;
+        width: 10%;
     }
-    .term{
-        margin-right: 250px;
+    .footer-copy-term{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .copyright{
+        padding-top: 5rem;
+        margin-left: 13.9rem;
         font-family: 'Poppins', sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -883,9 +729,32 @@ html{
 
         color: #5A5A5A;
     }
+    .term{
+        float: right;
+        margin-bottom: 5rem;
+        margin-right: -12rem;
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+
+        color: #5A5A5A;
+    }
+    .something{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* .footer-right-part{
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    } */
     .work{
-        margin-top: 30px;
-        margin-right: 250px;
+        float: right;
+        margin-top: -22rem;
+        margin-right: 10rem;
         font-family: 'Poppins', sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -896,16 +765,10 @@ html{
 
         color: #737373;
     }
-    .something{
-        margin-top: 30px;
-        margin-left: 30px;
-        margin-right: 250px;
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
     .service{
-        margin-right: 250px;
+        float: right;
+        margin-top: -14rem;
+        margin-right: 8rem;
         font-family: 'Poppins', sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -915,7 +778,9 @@ html{
         color: #737373;
     }
     .career{
-        margin-right: 250px;
+        float: right;
+        margin-top: -8.5rem;
+        margin-right: 8rem;
         font-family: 'Poppins', sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -926,7 +791,10 @@ html{
         color: #737373;
     }
     .article{
-        margin-right: 250px;
+        float: right;
+        margin-top: -3rem;
+        margin-right: 8.5rem;
+
         font-family: 'Poppins', sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -936,4 +804,13 @@ html{
 
         color: #737373;
     }
-} */
+    .footerline{
+        display: none;
+    }   
+}
+.achivement{
+    width: 100%
+}
+.data{
+    width: 100%
+}
