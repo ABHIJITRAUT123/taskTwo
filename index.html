@@ -9,34 +9,34 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <title>12GRIDS Page</title>
+        <link rel="stylesheet" href="https://www/w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <title>12Grids Page</title>
     </head>
 
     <body>
-        <!-- Header  for farmer above text -->
-        <header>
-            <!-- Navigation Section -->
-            <nav class="nav">              
-                <img class="grids" src="./mobileImage/group.png" />
-                <img class="bar" src="./mobileImage/bar.png"/>
-            </nav>
-            <!-- Farmer above text -->
-            <h1 class="upl">UPL LTD</h1>
-            <p class="ltd">Developing digital experience for World’s largest agri-chemical brand</p>
-            <div class="colour"></div>
-            <p class="ui">UI Development | CMS | Integrations</p>
-        </header>
-
-
         <main>
-            <!-- Section-1 for farmer image -->
+            <!-- Navigation Section -->
+            <nav class="nav-logo">              
+                <img class="grids-logo" src="./mobileImage/group.png" />
+                <img class="bar-logo" src="./mobileImage/bar.png"/>
+            </nav>
+            <!-- Farmer above Text -->
+            <section class="heading-container">
+                <h1 class="upl">UPL LTD</h1>
+                <p class="ltd">Developing digital experience for World’s largest agri-chemical brand</p>
+                <div class="colour"></div>
+                <p class="ui">UI Development | CMS | Integrations</p>
+            </section>
+            <!-- Farmer image -->
             <section>
+                    <img class="farmerdesktop" src="./desktopImages/dfarmer.png" >
                     <img class="farmer" src="./mobileImage/farmer.png" >
             </section>
 
-            <!-- Section-2 for farmer below text -->
+            <!-- Farmer below text -->
             <section>
-                <p class="pre">United Phosphorus Ltd. is the world’s third-largest agro-
+                <p class="farmer-right-side-text">United Phosphorus Ltd. is the world’s third-largest agro-
                     chemical brand whose main aim is to provide open access
                     to agriculture networks around the globe.
 
@@ -48,7 +48,7 @@
                 </p>
             </section>
 
-            <!-- Section-3 challenge Text -->
+            <!-- Challenge Title and Text -->
             <section>
                 <h3 class="challenge">Challenge</h3>
                 <p class="challengeText">Being in the chemical industry, gaining the trust of 
@@ -69,30 +69,27 @@
                         and live.</p>
             </section>
 
-            <!-- Section-4 Big Images for mobile -->
-            <section class="bigImg">
-                <div class="slideshow-container">
-                    <div class="mySlides fade">
-                        <div class="numbertext">1 / 3</div>
-                        <img src="./mobileImage/uplearth.png">
+            <!-- Big Images for Desktop -->
+            <section class="big-img-container">
+                <div class="carousel" data-flickity='{"wrapAround": true, "autoPlay": true}'>
+                    <div class="carousel-cell">
+                        <img src="./desktopImages/dwater.png">
                     </div>
                 
-                    <div class="mySlides fade">
-                        <div class="numbertext">2 / 3</div>
-                        <img src="./mobileImage/uplearth.png">
+                    <div class="carousel-cell">
+                        <img src="./desktopImages/dearth.png">
                     </div>
                 
-                    <div class="mySlides fade">
-                        <div class="numbertext">3 / 3</div>
-                        <img src="./mobileImage/uplearth.png">
+                    <div class="carousel-cell">
+                        <img src="./desktopImages/dframe.png">
                     </div>              
                 </div>
-            </section>       
+            </section>
 
-            <!-- Section-6 Approch Text -->
+            <!-- Approch Title and Text -->
             <section>
-                <h3 class="approach">Our Approach & Solution</h3>
-                <p class="approachText">UPL Limited, formerly United Phosphorus Limited, is an Indian 
+                <h3 class="challenge">Our Approach & Solution</h3>
+                <p class="challengeText">UPL Limited, formerly United Phosphorus Limited, is an Indian 
                         multinational company that manufactures and markets 
                         agrochemicals, industrial chemicals, chemical 
                         intermediates, and specialty chemicals, and also offers 
@@ -105,30 +102,40 @@
                         intermediates, and specialty chemicals, </p>
             </section>
 
-            <!-- Section-7 Small Images -->
-            <section class="threeImg">
-                <div class="slideshow-container">
-                    <div class="mySlides fade">
-                        <div class="numbertext">1 / 3</div>
-                        <img class="country" src="./mobileImage/image1.png">
+            <!-- Small Images for mobile -->
+            <section class="small-img-mobile">
+                <div class="carousel" data-flickity='{"autoPlay": true}'>
+                    <div class="carousel-cell">
+                        <img src="./mobileImage/image1.png">
                     </div>
                 
-                    <div class="mySlides fade">
-                        <div class="numbertext">2 / 3</div>
-                        <img class="country" src="./mobileImage/image2.png">
+                    <div class="carousel-cell">
+                        <img src="./mobileImage/image2.png">
                     </div>
                 
-                    <div class="mySlides fade">
-                        <div class="numbertext">3 / 3</div>
-                        <img class="country" src="./mobileImage/image3.png">
+                    <div class="carousel-cell">
+                        <img src="./mobileImage/image3.png">
                     </div>              
                 </div>
             </section>
 
-            <!-- Section-8 Result Text -->
+            <!-- Small Images for Desktop -->
+            <section class="three_Img">
+                <span>
+                    <img class="country" src="./mobileImage/image1.png">
+                </span>
+                <span>
+                    <img class="country" src="./mobileImage/image2.png">
+                </span>
+                <span>
+                    <img class="country" src="./mobileImage/image3.png">
+                </span>
+            </section>
+
+            <!-- Result title and Text -->
             <section>
-                <h3 class="result">Result & Impact</h3>
-                <p class="resultText">With the collaborative efforts of Huestrom Studio, we did a brand 
+                <h3 class="challenge">Result & Impact</h3>
+                <p class="challengeText">With the collaborative efforts of Huestrom Studio, we did a brand 
                         restructuring for UPL. Right from redesigning the entire theme to 
                         revisiting the content to appeal to the global audience, we made 
                         sure everything is appropriate to the T. 
@@ -139,12 +146,13 @@
                         and won’t burn a hole in your pocket. </p>
             </section>
 
-            <!-- Section-9 Screenshot Image -->
+            <!-- Screenshot Image -->
             <section>
+                <img class="screenshotdesktop" src="./desktopImages/dscreenshot.png" alt="">
                 <img class="screenshot" src="./mobileImage/screenshot.png" alt="Screenshot image here but due to some error image not showing"/>
             </section>
 
-            <!-- Section-10 -->
+            <!-- Prev Page and Next Page -->
             <section class="buttons-bottom">
                 <button class="boxSection">
                     <img class="leftArrow" src="./mobileImage/leftArrow.png" alt="leftArrow image here but due to some error image not showing"/>
@@ -158,14 +166,17 @@
 
             <!-- Footer Section -->
             <footer>
+                <!-- Footer First HTML -->
+
                 <div class="footerFirst">
-                    <h2 class="meet">Let’s Meet Up!</h2>
-                    <h3 class="look">Looking for a website or SEO?</h3>
-                    <br><br>
+                    <div class="meet">Let’s Meet Up!</div>
+                    <div class="look">Looking for a website or SEO?</div>
                     <button class="btn">
                         <div class="btnText">Schedule a Meet<i class="fa-solid fa-arrow-up-right"></i></div>
                     </button>
                 </div> 
+
+                <!-- Footer Second HTML -->
 
                 <div class="footerSecond">
                     <div class="something">
@@ -187,20 +198,22 @@
                     <div class="something">
                         <div class="footerline"></div>
                     </div>
-                    <div class="something">
+                    <div class="footer-right-part">
                         <span class="work">Work</span>
                         <span class="career">Career</span>
                         <span class="service">Service</span>
                         <span class="article">Article</span>
                     </div>
-                    <div class="something">
-                        <div class="term">Privacy policy | Terms of use</div>
-                        <div class="copyright">edge CRM is a product of Tantragyan Technologies Pvt Ltd which is a company registered in India. © 2021 All Rights Reserved.</div>
+                    <div class="footer-copy-term">
+                        <span class="copyright">edge CRM is a product of Tantragyan Technologies Pvt Ltd which is a company registered in India. © 2021 All Rights Reserved.</span>
+                        <span class="term">Privacy policy | Terms of use</span>
                     </div>    
                 </div>
             </footer>
         </main>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
         <script src="./index.js"></script>
     </body>
 </html>
